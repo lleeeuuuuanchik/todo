@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*
+{
+	box-sizing: border-box;
+	margin: 0; padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #313131;
+}
+
+.todo
+{
+	width: 500px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.todo__title
+{
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	color: #313131;
+}
+
+.todo__date
+{
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #313131;
+}
+
+.todo__btn-wr
+{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.todo__btn
+{
+	cursor: pointer;
+	border: none;
+	background-color: white;
+	padding: 10px 15px;
+	transition: .2s all ease;
+}
+
+.todo__btn--active { background: #F2F2F2; }
+
+.todo__btn:hover { background: #F2F2F2; }
+
+.todo__input
+{
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	outline: none;
+	border: none;
+	background-color: #F2F2F2;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 300;
+	color: #313131;
+}
+
+.todo__input:placeholder { color: #313131; }
